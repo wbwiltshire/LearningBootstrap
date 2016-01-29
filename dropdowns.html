@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learning Bootstrap - Dropdowns</title>
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Dropdowns in Bootstrap</h2>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-lg-12 bg-info">
+                    <p>Dropdown examples in Bootstrap, but be forewarned.  This only works with a list of links (i.e. &lt;a href="#"&gt;Link&lt;a&gt;),
+                    which makes dropdown really useful for menus, but not so much for data input.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-1 bg-warning">1</div>
+                <div class="col-lg-1 bg-info">2</div>
+                <div class="col-lg-1 bg-danger">3</div>
+                <div class="col-lg-1 bg-success">4</div>
+                <div class="col-lg-1 bg-warning">5</div>
+                <div class="col-lg-1 bg-info">6</div>
+                <div class="col-lg-1 bg-danger">7</div>
+                <div class="col-lg-1 bg-success">8</div>
+                <div class="col-lg-1 bg-warning">9</div>
+                <div class="col-lg-1 bg-info">10</div>
+                <div class="col-lg-1 bg-danger">11</div>
+                <div class="col-lg-1 bg-success">12</div>
+                <div class="col-lg-1 bg-warning">13</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Fruit
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">Apples</a></li>
+                        <li><a href="#">Oranges</a></li>
+                        <li><a href="#">Grapes</a></li>
+                        <li><a href="#">Avacados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Actions
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">Open File...</a></li>
+                        <li><a href="#">Close file...</a></li>
+                        <li><a href="#">Close All</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Exit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="index.html" class="btn btn-primary">Back</a>
+                </div>
+            </div>
+            <br />
+            <footer class="row">
+                <p>&copy; 2016 - Learning Bootstrap Website</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/bootstrap.js"></script>
+    </body>
+</html>

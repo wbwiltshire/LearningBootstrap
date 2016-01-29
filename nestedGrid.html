@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learning Bootstrap - Nested Grid</title>
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>The nested Bootstrap Grid</h2>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-lg-12 bg-success">
+                    <p>This is an outer div of col-lg-12</p>
+                    <div class="col-lg-6 bg-primary">
+                        <p>This is an inner div of col-lg-6</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12 bg-info">
+                    <p>Nesting with higher math: If you nest a div, the effective col value of the child will be based on the parent size.
+                    </p>
+                    
+                    <p>For example, if you use a parent with col-lg-12 and a child of col-lg-6, then the child will take up 1/2 (6/12) of the parent.
+                    </p>
+
+                    <p>If you use a parent with a col-lg-6 and a child of col-lg-6, then the child will still take up 1/2 (6/12) of the parent, but the
+                    parent will be smaller (only 6 columns)
+                    </p>
+                </div>
+            </div>
+            <br />            
+            <div class="row">
+                <div class="col-lg-6 bg-success">
+                    <p>This is an outer div of col-lg-6</p>
+                    <div class="col-lg-6 bg-primary">
+                        <p>This is an inner div of col-lg-6</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6 bg-success">
+                    <p>This is an outer div of col-lg-6</p>
+                    <div class="col-lg-12 bg-primary">
+                        <p>This is an inner div of col-lg-12</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6 bg-success">
+                    <p>This is an outer div of col-lg-6</p>
+                    <div class="row">
+                        <div class="col-lg-12 bg-primary">
+                            <p>This is an inner div of col-lg-12, but it's nested in a div class="row" which allows it to take up all of the parents width.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6 bg-info">
+                    <p>Note: you'll lose the 50% width of the child, if you move down to smaller screen sizes (e.g. tablet/small).  That is to say, the child will stack and NOT stay half the size of the parent.  
+                    So you'll need to add classes for them in both the parent and child (see below)</p>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  bg-success">
+                    <p>This is an outer div of col-lg-6</p>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-primary">
+                        <p>This is an inner div of col-xx-6</p>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="index.html" class="btn btn-primary">Back</a>
+                </div>
+            </div>
+            <br />
+            <footer class="row">
+                <p>&copy; 2016 - Learning Bootstrap Website</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/bootstrap.js"></script>
+    </body>
+</html>

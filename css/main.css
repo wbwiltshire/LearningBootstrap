@@ -1,0 +1,8 @@
+﻿.bg-cover {
+    background: url(../images/LinksysRouter.jpg);
+    height: 400px;
+    background-size:cover;
+}
+.text-normal {
+    font-weight: normal;
+}

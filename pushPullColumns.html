@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learning Bootstrap - Push/Pull Columns</title>
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Pushing and pulling columns in a Bootstrap Grid</h2>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-lg-12 bg-info">
+                    <p>This technique is good for swapping column presentation for different devices.  For example, an image to the right of some text
+                    in the desktop view, but for a phone view having the image above (before) the text.
+                    </p>
+
+                    <p>The math is important for determine how many columns you need to push or pull.
+                    </p>
+                </div>
+            </div>
+            <br />            
+            <div class="row">
+                <div class="col-md-4 col-md-push-8 bg-cover img-responsive">
+                    Column 1 with maybe an image
+                </div>
+                <div class="col-md-8 col-md-pull-4 bg-primary">
+                    Column 2 text
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="index.html" class="btn btn-primary">Back</a>
+                </div>
+            </div>
+            <br />
+            <footer class="row">
+                <p>&copy; 2016 - Learning Bootstrap Website</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/bootstrap.js"></script>
+    </body>
+</html>
